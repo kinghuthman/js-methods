@@ -1,8 +1,40 @@
 # JS Methods - Functions
 
-(need to go through these methods and make their own file)
+(need to go through the rest of methods and make their own file as well)
 
-Object.freeze()
+## Table of Contents
+
+> > [endsWith()](#endsWith)
+
+> > [Object.freeze](#objectFreeze)
+
+<a name="endsWith"></a>
+
+### endsWith()
+
+- endsWith() method determines whether a string ends with the characters of a
+  specified string, returning true or false as appropriate.
+
+const example = "This is a test string";
+
+const example2 = "Testing";
+
+const characters = "ring";
+
+const doesItEndWith = (str, endingLetters) => {
+
+return str.endsWith(endingLetters);
+
+};
+
+console.log(doesItEndWith(example, characters), "\n"); // true
+
+console.log(doesItEndWith(example2, characters)); // false
+
+<a name="objectFreeze"></a>
+
+### Object.freeze()
+
 // Once the object is frozen, you can no longer add, update, or  
 // delete properties from it. Any attempt at changing the object will be rejected without an error.
 
