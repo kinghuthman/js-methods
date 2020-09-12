@@ -8,6 +8,8 @@
 
 > > [Object.freeze](#objectFreeze)
 
+> > [filter()](#filter)
+
 <a name="endsWith"></a>
 
 ### endsWith()
@@ -15,17 +17,15 @@
 - endsWith() method determines whether a string ends with the characters of a
   specified string, returning true or false as appropriate.
 
-const example = "This is a test string";
+  > > const example = "This is a test string";
 
-const example2 = "Testing";
+  > > const example2 = "Testing";
 
-const characters = "ring";
+  > > const characters = "ring";
 
-const doesItEndWith = (str, endingLetters) => {
-
-return str.endsWith(endingLetters);
-
-};
+  > > const doesItEndWith = (str, endingLetters) => {
+  > > return str.endsWith(endingLetters);
+  > > };
 
 console.log(doesItEndWith(example, characters), "\n"); // true
 
@@ -208,11 +208,12 @@ substr()
 
 The range of a 32 bit integer is between 2,147,483,648 and 2,147,483,648
 
-filter()
-// creates a new array with all the elements that pass the test provided by the implemented function
-// does not modify the original array
-const arr = [1,2,3]
-console.log(arr.filter(element => {
-return element === 2;
-}))
-// returns 2
+<a name="filter"></a>
+
+### filter()
+
+- creates a new array with all the elements that pass the test provided by the implemented function
+- does not modify the original array
+
+  > > const friends = ['michelle','reed','tim']
+  > > console.log(friends.filter(friend => friend.length === 4)) // reed
