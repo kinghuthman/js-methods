@@ -1,6 +1,6 @@
-# js-methods
+# JS Methods - Functions
 
-JS Methods/functions
+(need to go through these methods and make their own file)
 
 Object.freeze()
 // Once the object is frozen, you can no longer add, update, or  
