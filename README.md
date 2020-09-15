@@ -1,5 +1,7 @@
 # JS Methods - Functions
 
+#### Methods I've used
+
 (need to go through the rest of methods and make their own file as well)
 
 ## Table of Contents
@@ -9,6 +11,10 @@
 > > [Object.freeze](#objectFreeze)
 
 > > [filter()](#filter)
+
+> > [indexOf()](#indexOf)
+
+> > [reduce()](#reduce)
 
 <a name="endsWith"></a>
 
@@ -57,11 +63,21 @@ map()
 // for each element in an array, in order. map() does not execute the function
 // for array elements without values. map() does not change the original array.
 
+<a name="reduce"></a>
+
 reduce()
-// The reduce() method reduces the array to a single value.
-// The reduce() method executes a provided function for each value of the array (from left-to-right).
-// The return value of the function is stored in an accumulator (result/total).
-// reduce() does not execute the function for array elements without values.
+
+> > The reduce() method reduces the array to a single value.
+
+> > The reduce() method executes a provided function for each value of the array (from left-to-right).
+
+> > The return value of the function is stored in an accumulator (result/total).
+
+> > reduce() does not execute the function for array elements without values.
+
+> > const numbers = [1,2,3]
+
+> > return numbers.reduce((accumulator, currentValue) => accumulator + currentValue) // 6
 
 push()
 // adds elements to the end of an array
@@ -100,10 +116,19 @@ slice()
 // the first is the index at which to begin extraction, and the second is the index
 // at which to stop extraction (extraction will occur up to, but not including the element at this index).
 
-indexOf()
-// allows us to quickly and easily check for the presence of an element on an array.
-// indexOf() takes an element as a parameter, and when called, it returns the position, or index,
-// of that element, or -1 if the element does not exist on the array.
+<a name="indexOf"></a>
+
+### indexOf()
+
+- allows us to quickly and easily check for the presence of an element on an array.
+- indexOf() takes an element as a parameter, and when called, it returns the position, or index,
+  of that element, or -1 if the element does not exist on the array.
+
+  > > const influencers = ["gates", "jobs", "musk"];
+
+  > > console.log(influencers.indexOf("gates")); // 0
+
+  > > console.log(influencers.indexOf("musk")); // 2
 
 Math.max()
 // return the number with the highest value
@@ -177,11 +202,6 @@ findIndex()
 find()
 // returns the first element in an array that passes a test
 
-reduce()
-// reduces the array to a single value, executes a provided function on each value, the return is stored
-// in an accumulator (result), reduce(accumulator, currentValue, currentIndex, array) have access. can also
-// set the initial value to 0
-
 from()
 // method creates a new, shallow-copied Array instance from an array-like or iterable object.
 
@@ -216,4 +236,5 @@ The range of a 32 bit integer is between 2,147,483,648 and 2,147,483,648
 - does not modify the original array
 
   > > const friends = ['michelle','reed','tim']
+
   > > console.log(friends.filter(friend => friend.length === 4)) // reed
