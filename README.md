@@ -15,6 +15,7 @@
 > > [indexOf()](#indexOf)
 
 > > [reduce()](#reduce)
+> > [isArray()](#isArray)
 
 <a name="endsWith"></a>
 
@@ -238,3 +239,11 @@ The range of a 32 bit integer is between 2,147,483,648 and 2,147,483,648
   > > const friends = ['michelle','reed','tim']
 
   > > console.log(friends.filter(friend => friend.length === 4)) // reed
+
+### Array.isArray()
+
+- determines whether an object is an array
+- returns true if so and false if not
+  
+  > > const friends = ['michelle', 'reed', 'tim']
+  > > console.log(Array.isArray(friends)) // true 
